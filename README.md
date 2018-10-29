@@ -6,16 +6,21 @@ Barra de Espaço </p>
 
 <h2> Instalação </h2>
 
+1 - É necessário que você tenha o python3.4 ou maior instalado:
+
+  Linux: O Linux já vem com o python3 instalado
+  
+  Windows: veja como instalar o Python no Windows aqui: https://python.org.br/instalacao-windows/
+
 1 - Clone o projeto com git ou faça o download para seu desktop:
 
   git clone https://github.com/Gustavosmc/fast_translate.git
 
 2 - Instale as dependências usando pip:
-  É necessário que você tenha o python3.4 ou maior instalado
 
   pip install -r requirements.txt
 
-3 - É necessário instalar SoX, com suporte a MP3. 
+3 - É necessário instalar Sox, com suporte a MP3. 
 
   No Ubuntu ou derivados do Debian: 
   sudo apt-get install sox libsox-fmt-mp3
@@ -31,5 +36,5 @@ Barra de Espaço </p>
     No Linux abra um terminal dentro da pasta do fast_translator e execute com:
     python main.py
     
-    No Windows você pode executar pelo terminal caso tenha o Python configurado no seu Path,
-    veja como instalar o Python no Windows aqui: https://python.org.br/instalacao-windows/
+    No Windows, assim como no Linux você pode executar pelo terminal caso tenha o Python configurado no seu Path.
+ 
