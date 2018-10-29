@@ -1,0 +1,10 @@
+É necessário instalar SoX, com suporte a MP3. 
+
+No Ubuntu ou derivados do Debian: 
+sudo apt-get install sox libsox-fmt-mp3
+
+Para usuários de Windows baixem o Sox aqui:
+https://sourceforge.net/projects/sox/files/sox/
+
+Após instalado você precisa copiar a libmad.DLL que se encontra zipado aqui, para o diretório onde foi instalado o Sox,
+e adicionar o caminho da instalação do Sox para as variáveis de ambientes do Windows.
