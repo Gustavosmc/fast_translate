@@ -1,6 +1,6 @@
 <h1>fast_translate</h1>
 
-<p>Traduz com audio um texto em outro idioma para Português, basta selecionar o texto que se quer traduzir em paginas da web ou documentos no desktop e pressionar Control +
+<p>Traduz um texto em outro idioma para Português(em audio), basta selecionar o texto que se quer traduzir em paginas da web ou documentos no desktop e pressionar Control +
 Barra de Espaço </p>
 
 
