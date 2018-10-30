@@ -13,11 +13,14 @@ key_controller = Controller()
 
 
 def speech(text, lang="pt"):
-    translate = Translator()
-    t_text = translate.translate(text, dest='pt').text
-    speech = Speech(t_text, lang)
-    sox_effects = ("speed", "1")
-    speech.play(sox_effects)
+    try:
+        translate = Translator()
+        t_text = translate.translate(text, dest='pt').text
+        speech = Speech(t_text, lang)
+        sox_effects = ("speed", "1")
+        speech.play(sox_effects)
+    except AttributeError as ae:
+        print(ae)
 
 
 def do_copy():
