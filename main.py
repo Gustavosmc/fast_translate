@@ -7,15 +7,17 @@ from pynput import keyboard
 from pynput.keyboard import Key, Controller
 from googletrans import Translator
 
-control = False
-lang = "pt-BR"
+is_pressed_control = False
 key_controller = Controller()
+
+
+print("Inicializando fast_speech...")
 
 
 def speech(text, lang="pt"):
     try:
         translate = Translator()
-        t_text = translate.translate(text, dest='pt').text
+        t_text = translate.translate(text, dest=lang).text
         speech = Speech(t_text, lang)
         sox_effects = ("speed", "1")
         speech.play(sox_effects)
@@ -35,20 +37,24 @@ def do_copy():
 
 
 def on_press(key):
-    global control
+    global is_pressed_control
     global lang
     if key == Key.ctrl_l:
-        control = True
-    if control and key == Key.space:
+        is_pressed_control = True
+    if is_pressed_control and key == Key.space:
         if do_copy():
             text = clipboard.paste()
             speech(text)
+    elif is_pressed_control and key == Key.alt:
+        if do_copy():
+            text = clipboard.paste()
+            speech(text, 'en')
 
 
 def on_release(key):
-    global control
+    global is_pressed_control
     if key == Key.ctrl_l:
-        control = False
+        is_pressed_control = False
 
 
 with keyboard.Listener(on_press=on_press,
