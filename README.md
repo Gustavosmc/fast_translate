@@ -32,9 +32,12 @@ Barra de Espaço </p>
   e adicionar o caminho da instalação do Sox para as variáveis de ambientes do Windows.
   
   <h2> Execução </h2>
-  
     No Linux abra um terminal dentro da pasta do fast_translator e execute com:
-    python main.py
-    
+    python main.py  
     No Windows, assim como no Linux você pode executar pelo terminal caso tenha o Python configurado no seu Path.
+    
+ <h2> Como Usar </h2>
  
+    1 - Control + Barra de Espaço -> Traduz o texto selecionado para audio em português
+    2 - Control + Alt -> Traduz o texto selecionado para audio em inglẽs
+
